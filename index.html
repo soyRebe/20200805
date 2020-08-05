@@ -4,33 +4,65 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Un poco de CSS</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
   <h1 class="titulos-principales">Aplicando CSS</h1>
   <h2 id="bienvenido" class="titulos-principales"></h2>
   <header>
     <nav>
-      <ul >
-        <li><a href="#"><i class="fa fa-home"> </i>Principal</a></li>
-        <li><a href="#cliente"><i class="fa fa-optin-monster"></i>Mascotas </a></li>
-        <li><a href="#menu"><i class="fa fa-info-circle" aria-hidden="true"  ></i>Informacion</a></li>
-        <li><a href="#llegar"><i class="fa fa-heart" aria-hidden="true"></i>Cuidados de mascotas</a></li>
-        <li><a href="#"><i class="fa fa-envelope-o"></i>contacto</a></li>
+      <ul class="menu-nav">
+        <li class="active"> <a href="#"><i class="fa fa-home"> </i>Principal</a></li>
+        <li><a href="mascotas.html"><i class="fa fa-optin-monster"></i>Mascotas </a></li>
+        <li><a href="#informacion"><i class="fa fa-info-circle" aria-hidden="true"  ></i>Informacion</a></li>
+        <li><a href="#cuidados"><i class="fa fa-heart" aria-hidden="true"></i>Cuidados de mascotas</a></li>
+        <li><a href="#contacto"><i class="fa fa-envelope-o"></i>contacto</a></li>
       </ul>
     </nav>
     </header>
-    <section>
+    <section class="main">
     </section>
-   
-    <h2>Tienda de Mascotas</h2>
-    <!--principal-->
-    <section>
-      <!--Mascotas-->
-      <div>
-        <h3>Mascotas</h3>
+    <!--mascotas-->
+    <h2 class="titulos-principales">Tienda de Mascotas</h2>
+    <section class="centrar">
+      <div id="mascotas" class="contenidos-principales">
+        <h3 class="titulo_tres">Mascotas</h3>
         <img src="img/monster-3.png" width="50%" />
         <h4>Lorem ipsum dolor sit amet.</h4>
-        <p >
+        <p class="text_content">
+          Vivamus interdum purus leo, eu laoreet lectus posuere sed. Phasellus ut interdum arcu.
+          Praesent ex dui, sollicitudin nec purus sit amet, imperdiet cursus turpis. Phasellus nec massa ipsum.
+          Pellentesque in ornare tortor,
+          a porttitor turpis.
+          Sed efficitur at metus vitae lobortis. Aliquam varius sodales aliquam. Suspendisse potenti.
+          Suspendisse quis sapien et libero fringilla commodo quis eu nisi.
+        </p>
+        <button onclick="alert('por favor complete el formulario de contacto')">quiero saber mas</button>
+      </div>
+      <!--informacion-->
+      <div id="informacion" class="contenidos-principales">
+        <h3 class="titulo_tres">Información</h3>
+        <img src="img/monster-one.png" width="50%" />
+        <h4>Lorem ipsum dolor sit amet.</h4>
+        <p class="text_content">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quidem, iure sequi vero blanditiis nemo est error corporis? 
+          Voluptates fuga consequatur iure illum! Officiis ut beatae tempora dolor, porro perferendis?
+          Vivamus interdum purus leo, eu laoreet lectus posuere sed. Phasellus ut interdum arcu.
+          Praesent ex dui, sollicitudin nec purus sit amet, imperdiet cursus turpis. Phasellus nec massa ipsum.
+          Pellentesque in ornare tortor,
+          a porttitor turpis.
+        </p>
+        <button onclick="alert('por favor complete el formulario de contacto')">quiero saber mas</button>
+      </div>
+      <!--cuidados-->
+      <div id="cuidados" class="contenidos-principales">
+        <h3 class="titulo_tres">cuidados</h3>
+        <img src="img/monster-2.png" width="50%"" />
+        <h4>Lorem ipsum dolor sit amet.</h4>
+        <p class="text_content">
           Vivamus interdum purus leo, eu laoreet lectus posuere sed. Phasellus ut interdum arcu.
           Praesent ex dui, sollicitudin nec purus sit amet, imperdiet cursus turpis. Phasellus nec massa ipsum.
           Pellentesque in ornare tortor,
@@ -41,12 +73,10 @@
         <button onclick="alert('por favor complete el formulario de contacto')">quiero saber mas</button>
       </div>
     </section>
-    <!-- fin de principal-->
     <!--Contacto-->
-    <section>
-      <div >
-        <h1>Contacto</h1>
-        
+    <section class="centrar">
+      <div>
+        <h1 class="titulos-principales">Contacto</h1>
         <h4>Lorem ipsum dolor sit amet.</h4>
       </div>
       <div>

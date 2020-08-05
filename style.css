@@ -1,0 +1,165 @@
+body {
+    background-image: linear-gradient(to right top, #dd00fb, #b645e6, #9658cb, #7d60ab, #6c6287);
+    font-family: 'Roboto', sans-serif;
+}
+
+.titulos-principales {
+    text-align: center;
+    color: #eee;
+    font-size: 50px;
+}
+
+.main {
+    background-image: url('img/monster-3.png');
+    height: 660px;
+    background-repeat: no-repeat;
+    background-position-x: center;
+
+}
+
+/***manu de navegacion**/
+nav {
+    text-align: center;
+    color: #eee;
+    margin: 20px;
+}
+
+a,
+a:link,
+a:visited {
+    text-decoration: none;
+    color: #eee;
+    padding: 3px;
+}
+
+a:hover,
+button:hover {
+    color: purple;
+}
+
+ul,
+li {
+    list-style: none;
+    text-align: right;
+    display: inline-block;
+}
+
+i {
+    padding: 3px;
+}
+
+.contenidos-principales {
+
+    width: 30%;
+    display: inline-block;
+    text-align: center;
+
+}
+
+.text_content {
+    padding: 0 20px;
+    color: #eee;
+    text-align: justify;
+}
+
+.centrar {
+    text-align: center;
+}
+
+.contacto {
+
+    width: 50%;
+    display: inline-block;
+    text-align: center;
+}
+
+/**Formulario***/
+
+label {
+    margin: 5px;
+    padding: 2px;
+}
+
+input {
+    margin: 7px 0 7px 2px;
+}
+
+button {
+    color: #eee;
+    border: 0;
+    background-color: transparent;
+    padding: 6px;
+    border: 1px solid #eee;
+    margin: 15px;
+    cursor: pointer;
+
+}
+
+/* efectos css sombras*/
+.titulos-principales {
+    color: white;
+    text-shadow: 5px 1px 4px #64357D;
+
+}
+
+/*** sombras contenedor***/
+.contenidos-principales {
+    box-shadow: 10px 10px 8px #64357D;
+    transition: width 2s, height 4s;
+}
+
+.contenidos-principales:hover {
+
+    margin: 20px 0;
+    width: 33%;
+}
+
+/* animacion*/
+.titulos-principales {
+    width: 100%;
+    position: relative;
+    animation-name: titulo;
+    animation-duration: 4s;
+    animation-delay: 2s;
+}
+
+@keyframes titulo {
+    0% {
+        color: gray;
+        left: 0px;
+        top: 0px;
+    }
+
+    25% {
+        color: pink;
+        left: 200px;
+        top: 0px;
+    }
+
+    100% {
+        color: gainsboro;
+        left: 0px;
+        top: 0px;
+    }
+}
+
+/** CSS @media Rule **/
+@media only screen and (max-width: 600px) {
+    .contenidos-principales {
+        width: 90%;
+    }
+
+    .contenidos-principales:hover {
+        width: 100%;
+    }
+
+    .titulo_tres {
+        color: white;
+        font-size: 20px;
+    }
+
+    ul,li {
+        text-align: center;
+       display:inline-block;
+    }
+}
